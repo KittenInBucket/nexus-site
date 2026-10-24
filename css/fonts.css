@@ -1,0 +1,10 @@
+/* Schiffbauer — платный шрифт, в папке его не было.
+   Положите файлы в assets/fonts/ (Schiffbauer-Regular.woff2 / .otf) — подхватятся автоматически.
+   Пока файла нет, используется запасной Jost Light (есть кириллица). */
+@font-face{
+  font-family:"Schiffbauer";
+  src:local("Schiffbauer"),local("Schiffbauer Regular"),
+      url("../assets/fonts/Schiffbauer-Regular.woff2") format("woff2"),
+      url("../assets/fonts/Schiffbauer-Regular.otf") format("opentype");
+  font-weight:300 400;font-display:swap;
+}
