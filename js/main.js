@@ -20,7 +20,7 @@ const nav    = document.getElementById('main-nav');
 if (burger && nav) {
   const toggle = (open) => {
     burger.setAttribute('aria-expanded', String(open));
-    burger.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    burger.setAttribute('aria-label', open ? 'Закрыть меню' : 'Открыть меню');
     document.body.classList.toggle('menu-open', open);
     if (header) header.classList.toggle('menu-open', open);
   };
