@@ -34,7 +34,7 @@
 <!-- ===== HERO ===== -->
 <section class="hero" id="top">
   <div class="hero-img" aria-hidden="true">
-    <img src="assets/img/Hero House Mask group.png" alt="">
+    <img src="assets/img/фото-дом.png" alt="" fetchpriority="high">
   </div>
   <div class="container">
     <div class="hero-wordmark" aria-label="NEXUS">
@@ -65,8 +65,8 @@
       <p class="about-text reveal">Nexus Architects родилось из желания выйти за рамки привычных типологий. Мы создаём пространства, которые дышат, где свет является основным строительным материалом, а тишина — неотъемлемым элементом.</p>
       <p class="about-text reveal" style="--d:80ms">Мы небольшая и гибкая студия, которая живёт сотрудничеством. Будь то частный дом или общественный культурный центр — наша преданность неизменна: архитектурное совершенство, возвышающее повседневность.</p>
       <div class="about-photos reveal" style="--d:160ms">
-        <div class="about-photo"><img src="assets/img/about-1.jpg" alt="Деталь лестницы в интерьере" loading="lazy"></div>
-        <div class="about-photo"><img src="assets/img/about-2.jpg" alt="Изогнутый бетонный фасад" loading="lazy"></div>
+        <div class="about-photo"><img src="assets/img/about-1.png" alt="Деталь лестницы в интерьере" loading="lazy"></div>
+        <div class="about-photo"><img src="assets/img/about-2.png" alt="Изогнутый бетонный фасад" loading="lazy"></div>
       </div>
     </div>
   </div>
@@ -106,7 +106,7 @@
         </div>
       </a>
     </div>
-    <div style="margin-top:56px" class="reveal">
+    <div class="projects-more reveal">
       <a class="btn-outline" href="projects.html">
         <span>Все проекты</span>
         <svg viewBox="0 0 44 8" fill="none" aria-hidden="true"><path d="M0 4h43M39 1l4 3-4 3" stroke="currentColor" stroke-width="1"/></svg>
@@ -203,8 +203,8 @@
 <section class="cta-section" id="contact">
   <div class="container">
     <h2 class="cta-title reveal">Давайте вместе<br>строить будущее</h2>
-    <form class="cta-form reveal" style="--d:100ms" onsubmit="return false">
-      <input class="cta-input" type="email" placeholder="Введите ваш email..." aria-label="Ваш email">
+    <form class="cta-form reveal" id="email-signup-form" style="--d:100ms">
+      <input class="cta-input" id="signup-email" name="email" type="email" placeholder="Введите ваш email..." aria-label="Ваш email" autocomplete="email" required>
       <button class="cta-submit" type="submit" aria-label="Отправить">
         <svg viewBox="0 0 44 10" fill="none" aria-hidden="true"><path d="M0 5h43M38 1l5 4-5 4" stroke="currentColor" stroke-width="1.2"/></svg>
       </button>
@@ -224,6 +224,16 @@
     <span class="footer-copy">@Все права защищены</span>
   </div>
 </footer>
+
+<!-- Email signup feedback -->
+<div class="signup-notice" id="signup-notice" role="status" aria-live="polite" aria-atomic="true">
+  <span class="signup-notice-icon" aria-hidden="true">✓</span>
+  <div class="signup-notice-copy">
+    <strong>Спасибо!</strong>
+    <p>Мы получили ваш email. Будем на связи.</p>
+  </div>
+  <button class="signup-notice-close" id="signup-notice-close" type="button" aria-label="Закрыть уведомление">×</button>
+</div>
 
 <!-- Team modal -->
 <div class="team-modal-overlay" id="team-modal" role="dialog" aria-modal="true" aria-label="Профиль участника команды">
