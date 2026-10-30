@@ -3,29 +3,32 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Избранные проекты — NEXUS Architects</title>
-<meta name="description" content="Избранные проекты Nexus Architects — жилая, культурная и коммерческая архитектура.">
+<title>Проекты — NEXUS Architects</title>
+<meta name="description" content="Избранные проекты Nexus Architects — жилая, общественная и коммерческая архитектура.">
 <meta name="theme-color" content="#121212">
+<meta property="og:title" content="Проекты — NEXUS Architects">
+<meta property="og:description" content="Избранные проекты Nexus Architects — жилая, общественная и коммерческая архитектура.">
+<meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Jost:wght@300;400&family=Noto+Sans:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/fonts.css">
 <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body data-section="projects">
 
 <header class="header" id="site-header">
   <div class="container">
     <a class="logo" href="index.html" aria-label="Nexus Architects — главная">Nexus Architects</a>
-    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" id="burger">
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="main-nav" id="burger">
       <span></span><span></span><span></span>
     </button>
     <nav class="nav" aria-label="Основная навигация" id="main-nav">
-      <a href="index.html#work">Работы</a>
-      <a href="index.html#about">О нас</a>
-      <a href="index.html#process">Процесс</a>
-      <a href="index.html#team">Команда</a>
-      <a class="btn-contact" href="index.html#contact">Контакт</a>
+      <a href="projects.html">Проекты</a>
+      <a href="about.html">Студия</a>
+      <a href="services.html">Услуги</a>
+      <a href="team.html">Команда</a>
+      <a class="btn-contact" href="contact.html">Контакт</a>
     </nav>
   </div>
 </header>
@@ -33,83 +36,133 @@
 <main>
 <section class="projects-hero">
   <div class="container">
-    <h1 class="section-title reveal">Избранные проекты</h1>
+    <span class="eyebrow reveal">Портфолио · 2024–2026</span>
+    <h1 class="section-title reveal" style="margin-bottom:28px">Избранные проекты</h1>
+    <p class="lead reveal" style="--d:80ms">Жилые дома, общественные здания и офисы. Выберите категорию или откройте любой проект, чтобы увидеть концепцию, материалы и ключевые решения.</p>
   </div>
 </section>
 
-<section class="section" style="padding-top:0">
+<section class="section" style="padding-top:40px">
   <div class="container">
+    <div class="filters reveal" id="filters" role="group" aria-label="Фильтр проектов">
+      <button class="filter active" type="button" data-filter="all" aria-pressed="true">Все</button>
+      <button class="filter" type="button" data-filter="residential" aria-pressed="false">Жилые</button>
+      <button class="filter" type="button" data-filter="public" aria-pressed="false">Общественные</button>
+      <button class="filter" type="button" data-filter="commercial" aria-pressed="false">Коммерческие</button>
+    </div>
     <div class="projects-all">
-      <a class="proj-card reveal" style="--d:0ms" href="project-levitate-mass.html">
-        <div class="ph"><img src="assets/img/SP Horizon Match.png" alt="Horizon Match" loading="lazy"></div>
+      <a class="proj-card reveal" style="--d:0ms" href="project-horizon-match.html" data-type="residential">
+        <div class="ph"><img src="assets/img/SP%20Horizon%20Match.png" alt="Horizon Match — жилой проект, 2025" loading="lazy"></div>
         <div class="cap">
-          <span>Horizon Match</span>
-          <svg class="arrow" viewBox="0 0 44 8" fill="none"><path d="M0 4h43M39 1l4 3-4 3" stroke="currentColor" stroke-width="1"/></svg>
+          <div class="cap-text"><span class="cap-name">Horizon Match</span><span class="cap-meta">Жилой · 2025</span></div>
+          <svg class="arrow" viewBox="0 0 44 8" fill="none" aria-hidden="true"><path d="M0 4h43M39 1l4 3-4 3" stroke="currentColor" stroke-width="1"/></svg>
         </div>
       </a>
-      <a class="proj-card reveal" style="--d:80ms" href="project-levitate-mass.html">
-        <div class="ph"><img src="assets/img/SP CSOVO CREAST.png" alt="Csovo Creast" loading="lazy"></div>
+      <a class="proj-card reveal" style="--d:80ms" href="project-csovo-creast.html" data-type="public">
+        <div class="ph"><img src="assets/img/SP%20CSOVO%20CREAST.png" alt="Csovo Creast — общественный проект, 2024" loading="lazy"></div>
         <div class="cap">
-          <span>Csovo Creast</span>
-          <svg class="arrow" viewBox="0 0 44 8" fill="none"><path d="M0 4h43M39 1l4 3-4 3" stroke="currentColor" stroke-width="1"/></svg>
+          <div class="cap-text"><span class="cap-name">Csovo Creast</span><span class="cap-meta">Общественный · 2024</span></div>
+          <svg class="arrow" viewBox="0 0 44 8" fill="none" aria-hidden="true"><path d="M0 4h43M39 1l4 3-4 3" stroke="currentColor" stroke-width="1"/></svg>
         </div>
       </a>
-      <a class="proj-card reveal" style="--d:0ms" href="project-levitate-mass.html">
-        <div class="ph"><img src="assets/img/SP STONE SONG.png" alt="Stone Song" loading="lazy"></div>
+      <a class="proj-card reveal" style="--d:160ms" href="project-stone-song.html" data-type="residential">
+        <div class="ph"><img src="assets/img/SP%20STONE%20SONG.png" alt="Stone Song — жилой проект, 2026" loading="lazy"></div>
         <div class="cap">
-          <span>Stone Song</span>
-          <svg class="arrow" viewBox="0 0 44 8" fill="none"><path d="M0 4h43M39 1l4 3-4 3" stroke="currentColor" stroke-width="1"/></svg>
+          <div class="cap-text"><span class="cap-name">Stone Song</span><span class="cap-meta">Жилой · 2026</span></div>
+          <svg class="arrow" viewBox="0 0 44 8" fill="none" aria-hidden="true"><path d="M0 4h43M39 1l4 3-4 3" stroke="currentColor" stroke-width="1"/></svg>
         </div>
       </a>
-      <a class="proj-card reveal" style="--d:80ms" href="project-levitate-mass.html">
-        <div class="ph"><img src="assets/img/SP ONEHOUSE RESONANSE.png" alt="Onehouse Resonanse" loading="lazy"></div>
+      <a class="proj-card reveal" style="--d:0ms" href="project-onehouse-resonanse.html" data-type="residential">
+        <div class="ph"><img src="assets/img/SP%20ONEHOUSE%20RESONANSE.png" alt="Onehouse Resonanse — жилой проект, 2025" loading="lazy"></div>
         <div class="cap">
-          <span>Onehouse Resonanse</span>
-          <svg class="arrow" viewBox="0 0 44 8" fill="none"><path d="M0 4h43M39 1l4 3-4 3" stroke="currentColor" stroke-width="1"/></svg>
+          <div class="cap-text"><span class="cap-name">Onehouse Resonanse</span><span class="cap-meta">Жилой · 2025</span></div>
+          <svg class="arrow" viewBox="0 0 44 8" fill="none" aria-hidden="true"><path d="M0 4h43M39 1l4 3-4 3" stroke="currentColor" stroke-width="1"/></svg>
         </div>
       </a>
-      <a class="proj-card reveal" style="--d:0ms" href="project-levitate-mass.html">
-        <div class="ph"><img src="assets/img/SP THE VELVET PIVOT.png" alt="The Velvet Pivot" loading="lazy"></div>
+      <a class="proj-card reveal" style="--d:80ms" href="project-the-velvet-pivot.html" data-type="commercial">
+        <div class="ph"><img src="assets/img/SP%20THE%20VELVET%20PIVOT.png" alt="The Velvet Pivot — коммерческий проект, 2026" loading="lazy"></div>
         <div class="cap">
-          <span>The Velvet Pivot</span>
-          <svg class="arrow" viewBox="0 0 44 8" fill="none"><path d="M0 4h43M39 1l4 3-4 3" stroke="currentColor" stroke-width="1"/></svg>
+          <div class="cap-text"><span class="cap-name">The Velvet Pivot</span><span class="cap-meta">Коммерческий · 2026</span></div>
+          <svg class="arrow" viewBox="0 0 44 8" fill="none" aria-hidden="true"><path d="M0 4h43M39 1l4 3-4 3" stroke="currentColor" stroke-width="1"/></svg>
         </div>
       </a>
-      <a class="proj-card reveal" style="--d:80ms" href="project-levitate-mass.html">
-        <div class="ph"><img src="assets/img/SP RHYTHM STACK .png" alt="Rhythm Stack" loading="lazy"></div>
+      <a class="proj-card reveal" style="--d:160ms" href="project-rhythm-stack.html" data-type="commercial">
+        <div class="ph"><img src="assets/img/SP%20RHYTHM%20STACK%20.png" alt="Rhythm Stack — коммерческий проект, 2024" loading="lazy"></div>
         <div class="cap">
-          <span>Rhythm Stack</span>
-          <svg class="arrow" viewBox="0 0 44 8" fill="none"><path d="M0 4h43M39 1l4 3-4 3" stroke="currentColor" stroke-width="1"/></svg>
+          <div class="cap-text"><span class="cap-name">Rhythm Stack</span><span class="cap-meta">Коммерческий · 2024</span></div>
+          <svg class="arrow" viewBox="0 0 44 8" fill="none" aria-hidden="true"><path d="M0 4h43M39 1l4 3-4 3" stroke="currentColor" stroke-width="1"/></svg>
         </div>
       </a>
-      <a class="proj-card reveal" style="--d:0ms" href="project-levitate-mass.html">
-        <div class="ph"><img src="assets/img/SP TESSERACT FRAME.png" alt="Tesseract Frame" loading="lazy"></div>
+      <a class="proj-card reveal" style="--d:0ms" href="project-tesseract-frame.html" data-type="public">
+        <div class="ph"><img src="assets/img/SP%20TESSERACT%20FRAME.png" alt="Tesseract Frame — общественный проект, 2025" loading="lazy"></div>
         <div class="cap">
-          <span>Tesseract Frame</span>
-          <svg class="arrow" viewBox="0 0 44 8" fill="none"><path d="M0 4h43M39 1l4 3-4 3" stroke="currentColor" stroke-width="1"/></svg>
+          <div class="cap-text"><span class="cap-name">Tesseract Frame</span><span class="cap-meta">Общественный · 2025</span></div>
+          <svg class="arrow" viewBox="0 0 44 8" fill="none" aria-hidden="true"><path d="M0 4h43M39 1l4 3-4 3" stroke="currentColor" stroke-width="1"/></svg>
         </div>
       </a>
-      <a class="proj-card reveal" style="--d:80ms" href="project-levitate-mass.html">
-        <div class="ph"><img src="assets/img/SP LEVITATE MASS.png" alt="Levitate Mass" loading="lazy"></div>
+      <a class="proj-card reveal" style="--d:80ms" href="project-levitate-mass.html" data-type="residential">
+        <div class="ph"><img src="assets/img/SP%20LEVITATE%20MASS.png" alt="Levitate Mass — жилой проект, 2026" loading="lazy"></div>
         <div class="cap">
-          <span>Levitate Mass</span>
-          <svg class="arrow" viewBox="0 0 44 8" fill="none"><path d="M0 4h43M39 1l4 3-4 3" stroke="currentColor" stroke-width="1"/></svg>
+          <div class="cap-text"><span class="cap-name">Levitate Mass</span><span class="cap-meta">Жилой · 2026</span></div>
+          <svg class="arrow" viewBox="0 0 44 8" fill="none" aria-hidden="true"><path d="M0 4h43M39 1l4 3-4 3" stroke="currentColor" stroke-width="1"/></svg>
         </div>
       </a>
     </div>
+    <p class="empty-note" id="empty-note">В этой категории пока нет проектов.</p>
   </div>
 </section>
+<section class="cta-section" id="contact">
+  <div class="container">
+    <h2 class="cta-title reveal">Давайте вместе<br>строить будущее</h2>
+    <form class="cta-form reveal" style="--d:100ms" data-demo-form data-title="Спасибо!" data-text="Мы получили ваш email. Будем на связи.">
+      <input class="cta-input" name="email" type="email" placeholder="Введите ваш email..." aria-label="Ваш email" autocomplete="email" required>
+      <button class="cta-submit" type="submit" aria-label="Отправить">
+        <svg viewBox="0 0 44 10" fill="none" aria-hidden="true"><path d="M0 5h43M38 1l5 4-5 4" stroke="currentColor" stroke-width="1.2"/></svg>
+      </button>
+    </form>
+    <p class="cta-note reveal" style="--d:160ms">Оставьте email — расскажем о новых проектах и ответим на вопросы. Или <a href="contact.html" style="color:var(--gold);border-bottom:1px solid var(--border)">напишите нам подробнее</a>.</p>
+  </div>
+</section>
+
 </main>
 
 <footer class="footer">
   <div class="container">
-    <nav class="footer-links" aria-label="Навигация в подвале">
-      <a href="#">Партнёры</a>
-      <a href="index.html#process">Процесс</a>
-      <a href="index.html#team">Команда</a>
-      <a href="index.html#contact">Контакты</a>
-    </nav>
-    <span class="footer-copy">@Все права защищены</span>
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand">Nexus</div>
+        <p class="footer-brand-note">Лаборатория пространственных идей. Архитектура, где свет — основной строительный материал.</p>
+      </div>
+      <div>
+        <h4>Навигация</h4>
+        <ul>
+          <li><a href="projects.html">Проекты</a></li>
+          <li><a href="about.html">Студия</a></li>
+          <li><a href="services.html">Услуги</a></li>
+          <li><a href="team.html">Команда</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Проекты</h4>
+        <ul>
+          <li><a href="projects.html#residential">Жилые</a></li>
+          <li><a href="projects.html#public">Общественные</a></li>
+          <li><a href="projects.html#commercial">Коммерческие</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Контакты</h4>
+        <ul>
+          <li><a href="mailto:hello@nexus-architects.com">hello@nexus-architects.com</a></li>
+          <li><a href="tel:+70000000000">+7 (000) 000-00-00</a></li>
+          <li><span>Пн–Пт, 10:00–19:00</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Nexus Architects. Все права защищены.</span>
+      <a href="#top">Наверх ↑</a>
+    </div>
   </div>
 </footer>
 
