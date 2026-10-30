@@ -588,7 +588,9 @@ button{cursor:pointer;background:none;border:none;padding:0;font:inherit;color:i
   .hero-wordmark{font-size:19.44vw;margin-bottom:16px}
   .hero-rule{margin-top:0;margin-bottom:20px}
   .hero-body{grid-template-columns:1fr;gap:16px;max-width:100%;margin-top:20px}
-  .hero-body > div{min-height:0}
+  .hero-body > div{display:contents}
+  .hero-body p + p{margin-top:0}
+  .hero-body .btn-outline{order:1;margin-top:8px;align-self:auto;justify-self:start}
   .hero-img{right:-26%;top:11%;width:min(112vw,560px);transform:none;opacity:.55;animation:none}
   .hero-img img{max-height:44svh}
   .hero-scroll{display:none}
@@ -626,7 +628,7 @@ button{cursor:pointer;background:none;border:none;padding:0;font:inherit;color:i
   .team-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px 12px;padding-inline:0;justify-items:center}
   .team-member{max-width:100%;padding:0}
   .team-member .ava{width:min(140px,38vw);height:min(140px,38vw)}
-  .team-cards{grid-template-columns:1fr;gap:40px}
+  .team-cards{grid-template-columns:1fr;gap:72px}
   .team-card{display:grid;grid-template-columns:96px minmax(0,1fr);column-gap:20px;row-gap:6px}
   .team-card .ava{width:96px;height:96px;grid-row:1/4}
   .team-card h3{margin-top:0;align-self:end}
